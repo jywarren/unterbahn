@@ -1,0 +1,32 @@
+---
+layout: post
+title: Who was the lone genius inventor of the hoverboard?
+date: 2016-01-01
+tags: ["Blog","open-hardware"]
+---
+
+I just heard [Planet Money episode #666](http://www.npr.org/sections/money/2015/11/27/457404184/episode-666-the-hoverboard-life) on NPR, which was about the development of the "hoverboard" -- those Segway-like things with no control stick, so they look more like a... two-wheeled skateboard or something. I'd just seen one in a production of the musical Wonder.land, ridden by the Cheshire Cat, and either he was pretty good at it, or they're actually easier to control than I'd thought. But the PM episode is about where they come from, and who invented them. This is what they look like (image via fastcodesign.com):
+
+[![h](h-1024x576.jpg)](http://unterbahn.com/wp-content/uploads/2016/01/h.jpg)
+
+At first I was interested to hear them air out the idea, which I've heard folks like [Nadya Peek](http://infosyncratic.nl) and [Christina Xu](http://www.christinaxu.org/) mention, that folks in Shenzhen just sort of doesn't bother with defending intellectual property, in part because it's not worth it -- I imagine for reasons of expense and enforcement -- and also because it's just not part of the culture there. I'm probably misrepresenting this idea, because I really don't know what I'm talking about, which is why I'd really like to learn more about it from folks like Christina and Nadya. Unfortunately, listening to this Planet Money episode wasn't going to help me in that regard...
+
+...because then the PM folks said that they didn't really believe that there wasn't an inventor, and they tracked down [some Kickstarter campaign from 2013](https://www.kickstarter.com/projects/687658339/hovertrax) for what does in fact look like an early "hoverboard" (it's called a "Hovertrax") -- **and then basically turned the story into one about how the Shenzhen folks must've "stolen" or "ripped off" this design from this one true inventor.**
+
+This was really frustrating to hear. Even though they acknowledged in the episode that the patent system is "only a few hundred years old," they insisted on fitting the whole story into a moral framework which assumes one person outright "owns" an idea in its entirety, and completely discounts collaborative development, let alone the much more nebulous process of open exchange and development of ideas which is basically how people had always "come up with" technologies **before** the patent system was invented.
+
+Even more frustratingly, they also justified crowning the Hovertrax guy as the original inventor by "going into a bit of a YouTube wormhole on two-wheeled, self-balancing scooters" and asserting that "they do not exist before May 2013" -- the date of the Kickstarter. Great research process. Well, I'm sorry, but a very cursory search led me to this page (among others) by a guy named Dale in 2008:
+
+[http://www.wa4dsy.net/robot/balancing-robot/analog-balancing-bot](http://www.wa4dsy.net/robot/balancing-robot/analog-balancing-bot)
+
+[![DSCF0748](http://unterbahn.com/wp-content/uploads/2016/01/DSCF0748.jpg)](DSCF0748.jpg)
+
+...describing, with instructions, circuit designs, and (gasp!) math, how to make things balance themselves, and I'm sure that's not the first post on it because he cites others' work. Now, these aren't even just people who thought it up first (which is all you have to do to file a patent), or people who built the first ones, or even the first to post about it. It's just a particularly thorough, (and notably open) documentation of one design. Who knows; maybe a hundred other people thought of it and decided to keep it secret so they could get rich someday. (?)
+
+Really, after the Segway, **tons of people** were probably thinking of a version without a control stick -- heck, I remember doodling stick-less "hoverboards" myself around that time. Partially because the Segway's steering stick just looked dumb. But my point isn't that the "real inventor" was one of these folks, but rather that this idea of searching for the "original inventor" is itself flawed. The lone-inventor-genius, like Iron Man, or Nikola Tesla in **the Prestige** (so help me if I can't think of less ridiculous examples, but Hollywood really has caricatured this ad infinitum) is just fiction. People are never really working alone, or if they are, they can never achieve as much as those who collaborate and share their ideas. This is not to say I think the Shenzhen hoverboard makers shouldn't **credit** prior examples upon which they based their work, but it's not like Hovertrax did. And also, really, why isn't Planet Money celebrating all the amazing work (design, manufacturing, distribution) of the folks in Shenzhen to actually get these made, at scale? Isn't that just as much of an achievement?
+
+Maybe this is also related to how today, if someone in tech says "I have this great idea I want to tell you about, but you have to sign this NDA first," we kind of assume they must have a pretty crappy idea -- whereas ten years ago, that mightn't have been unusual to ask. I guess I feel that the rise of free and open source software, and its technical ubiquity, has really successfully sold the idea that you can achieve more by sharing, and that folks who are desperately clinging to their "secret, brilliant idea" are deluding themselves, or even trying to delude us. Not everyone believes this -- there's still a great big world of proprietary technology out there -- but the way that this framework breaks down in favor of other models outside the US and Europe is something I'd really like to learn more about.
+
+The open source mode of production is still fairly young here, and we could use other cultural (and legal) models to learn from, [especially in the hardware space](http://oshwa.org)! Because it really is a better way, and it really does lead to more creativity and more interesting projects, as you can see by from the [absolute blizzard of "self balancing" projects on Instructables](http://www.instructables.com/howto/self+balancing/)
+
+[![Screenshot 2016-01-01 at 8.49.28 PM](Screenshot-2016-01-01-at-8.49.28-PM-1024x486.png)](http://unterbahn.com/wp-content/uploads/2016/01/Screenshot-2016-01-01-at-8.49.28-PM.png)

@@ -1,0 +1,10 @@
+---
+layout: post
+title: "The question of distributed revisions and distributed reversion. This is something I’m looking for,..."
+date: 2009-02-04
+tags: ["Blog"]
+---
+
+"The question of distributed revisions and distributed reversion. This is something I'm looking for, more than is spelled out in the New Data Model. It connects to "identity" of contributors, and federating identity between different read/write data access points. Imagine a parallel universe in which read/write - e.g. transactional - clients were writing back to different physical instances of a data store. Subsequently all the changes are being collected into one central "view" of the world depicted. Given this parallel universe also contains a satisfactory way to conflate changes - e.g. one original geometry is changed in 2 different ways by 2 different people and subsequently resolved back into one changed object. (I recall seeing a good presentation on doing this at OSGeo '05 in Minneapolis...)What subsequently happens when one wants to do distributed reversion? E.g., to subsequently decide that one set of changes to a shape was "unreliable" but the other wasn't. Would one have to rollback the geometry to its original state, then subsequently re-apply one set of changes but not the other, creating a revised version? Perhaps this is the view from Mars - I love to speculate about solutions to problems we don't yet have, but can only predict. Yet this looks obvious to me - a problem that we can't avoid having. The conviction that, for technological, social and legal reasons alike, OSM will one day have to federate its data store, goes back with me a long way. Frederik and Jochen don't think so - the paper states that a central data cluster, one ring to rule them all, is the only thng viable now. Perhaps to suggest otherwise is to unwisely invite contention."  
+
+ - _Jo Walsh, [Mapping Hacks » Blog Archive  » The OpenStreetmap New Data Model Army](http://mappinghacks.com/2007/04/19/the-openstreetmap-new-data-model-army/)_
