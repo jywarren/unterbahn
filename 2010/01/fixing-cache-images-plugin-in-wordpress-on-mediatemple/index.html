@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<base href="" />
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Fixing Cache Images plugin in WordPress on MediaTemple &#8211; Unterbahn</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Fixing Cache Images plugin in WordPress on MediaTemple Comments Feed" href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crp-style-rounded-thumbs-css'  href='/wp-content/plugins/contextual-related-posts/css/default-style.css?ver=4.9.5' type='text/css' media='all' />
+<style id='crp-style-rounded-thumbs-inline-css' type='text/css'>
+
+.crp_related a {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.crp_related img {
+  max-width: 50px;
+  margin: auto;
+}
+.crp_related .crp_title {
+  width: 50px;
+}
+                
+</style>
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css'  href='/wp-content/themes/twentysixteen/style.css?ver=4.9.5' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='/wp-content/themes/twentysixteen/css/ie.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='/wp-content/themes/twentysixteen/css/ie8.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='/wp-content/themes/twentysixteen/css/ie7.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wp-markdown-prettify-css'  href='/wp-content/plugins/wp-markdown/css/prettify.css?ver=1.6.1' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='OurGoods Trade School &#8211; teach and learn in NYC' href='/2010/01/ourgoods-trade-school-teach-and-learn-in-nyc/' />
+<link rel='next' title='Good and bad news from Bethlehem' href='/2010/01/good-and-bad-news-from-bethlehem/' />
+<meta name="generator" content="WordPress 4.9.5" />
+<link rel="canonical" href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/" />
+<link rel='shortlink' href='/?p=1159' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2010%2F01%2Ffixing-cache-images-plugin-in-wordpress-on-mediatemple%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2F2010%2F01%2Ffixing-cache-images-plugin-in-wordpress-on-mediatemple%2F&#038;format=xml" />
+</head>
+
+<body class="post-template-default single single-post postid-1159 single-format-standard group-blog no-sidebar">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="/" rel="home">Unterbahn</a></p>
+									</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-navigation-container"><ul id="menu-navigation" class="primary-menu"><li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/">Projects</a></li>
+<li id="menu-item-2480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/">@unterbahn</a></li>
+<li id="menu-item-2379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li id="menu-item-2380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+													<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="Social Links Menu">
+								<div class="menu-navigation-container"><ul id="menu-navigation-1" class="social-links-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/"><span class="screen-reader-text">Projects</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/"><span class="screen-reader-text">@unterbahn</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren"><span class="screen-reader-text">Code</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren"><span class="screen-reader-text">Public Lab</span></a></li>
+</ul></div>							</nav><!-- .social-navigation -->
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		
+<article id="post-1159" class="post-1159 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		<h1 class="entry-title">Fixing Cache Images plugin in WordPress on MediaTemple</h1>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>Matt Mullenweg&#8217;s great <a href="http://svn.wp-plugins.org/cache-images/trunk/">Cache Images plugin</a> for WordPress (Just go to the Plugins > Add New page in your WordPress install and search for it) lets you copy any hotlinked images on your blog into your own /uploads/ folder for safekeeping (and to be polite to others&#8217; servers!), and I love it. But when you first install it, it often chokes, especially on MediaTemple. I&#8217;ve had problems with this more than once, so I thought I&#8217;d jot this down for future reference and to help anyone else struggling with the same issues. The two problems are a) permissions for the /uploads/ folder, and b) the file_get_contents() function. Here&#8217;s a fix:</p>
+<p>First, you have to change the uploads directory from a long absolute path to just a relative one, so in Settings > Miscellaneous, instead of:</p>
+<p><code>/bla/bla/mediatemples/long/url/domainname/html/wp-content/uploads/</code></p>
+<p>it should say:</p>
+<p><code>wp-content/uploads</code></p>
+<p>Second, you have to change the file_get_contents() call on line 118 of the plugin file &#8220;plugins/cache-images/cache-images.php&#8221;. MediaTemple and other hosts don&#8217;t like that. But you can usually use the curl() library, so if you add the following code somewhere near the top of the file, you can use this fancy new &#8216;<b>file_get_contents_curl()</b>&#8216; function instead of the native one:</p>
+<pre>
+function file_get_contents_curl($url) {
+	$ch = curl_init();
+	
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
+	curl_setopt($ch, CURLOPT_URL, $url);
+	
+	$data = curl_exec($ch);
+	curl_close($ch);
+	
+	return $data;
+}
+</pre>
+<p>Then all you have to do is change the call (on what USED TO BE line 118) to:</p>
+<pre>$img      = file_get_contents_curl( $b['scheme'] . '://' . $b['host'] . str_replace(' ', '%20', $b['path']) . $b['query'] );</pre>
+<p>That is, just change &#8220;file_get_contents&#8221; to &#8220;file_get_contents_curl()&#8221;.</p>
+<p>I&#8217;d do it myself for you and host the file, but it&#8217;s not my code. Hmm, can I commit this change anywhere? Matt?</p>
+<div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/"    ><span class="crp_title">Vectorizing sketches and photos with your&hellip;</span></a></li><li><a href="/2017/06/100-renewable/"    ><span class="crp_title">In Somerville, you can email DESCustCare@dynegy.com&hellip;</span></a></li><li><a href="/2015/09/quick-antfarm-update/"    ><span class="crp_title">Quick antfarm update</span></a></li><li><a href="/2018/02/good-host-w-%f0%9f%95%b7%ef%b8%8f%f0%9f%95%b8%ef%b8%8f-tendencies-comics-drawing/"    ><span class="crp_title">good host w &#x1f577;&#xfe0f;&#x1f578;&#xfe0f;&hellip;</span></a></li><li><a href="/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"    ><span class="crp_title">Who was the lone genius inventor of the hoverboard?</span></a></li></ul><div class="crp_clear"></div></div>	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/" rel="bookmark"><time class="entry-date published" datetime="2010-01-24T11:15:19+00:00">January 24, 2010</time><time class="updated" datetime="2010-01-24T11:23:16+00:00">January 24, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			4 thoughts on &ldquo;Fixing Cache Images plugin in WordPress on MediaTemple&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-2893" class="comment even thread-even depth-1">
+			<article id="div-comment-2893" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/b774e8a25477b87e69d0390ac12fc08d?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b774e8a25477b87e69d0390ac12fc08d?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='http://blogote.com' rel='external nofollow' class='url'>Rockstar Sid</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/#comment-2893">
+							<time datetime="2010-03-17T20:31:23+00:00">
+								March 17, 2010 at 8:31 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>I would like to know if there are any fallout if we cache images? Would that cause an increase in disk space?</p>
+<p>And.. is it possible to cache images that are on the homepage?<br />
+Cheers..</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2902" class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-2902" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='/' rel='external nofollow' class='url'>Jeffrey Warren</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/#comment-2902">
+							<time datetime="2010-03-19T12:42:48+00:00">
+								March 19, 2010 at 12:42 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>What do you mean images that are on the homepage? Like, in your index.php? </p>
+<p>it would mean you have less disk space. But often if you hotlink to other sites, they&#8217;ll block you and your images will break. And it&#8217;s just common courtesy to host your own imagery.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-2911" class="comment even thread-even depth-1">
+			<article id="div-comment-2911" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/b774e8a25477b87e69d0390ac12fc08d?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b774e8a25477b87e69d0390ac12fc08d?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='http://blogote.com' rel='external nofollow' class='url'>Rockstar Sid</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/#comment-2911">
+							<time datetime="2010-03-21T01:37:56+00:00">
+								March 21, 2010 at 1:37 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>If you are using page speed addon you can get an idea on what I am really trying to say.. It asks you to set an expiration for the images that are on the homepage.. I don&#8217;t know if an easy solution exists, but I thought I&#8217;ll let you know.</p>
+<p>Thanks for the response :) </p>
+<p>Cheers.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-3216" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-3216" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/7f3c25e4bfa23c7239dfdcb14c9198fc?s=42&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/7f3c25e4bfa23c7239dfdcb14c9198fc?s=84&#038;d=mm&#038;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn">zac</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/#comment-3216">
+							<time datetime="2010-06-25T01:48:16+00:00">
+								June 25, 2010 at 1:48 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Still didn&#8217;t work for me&#8230;</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+			<p class="no-comments">Comments are closed.</p>
+	
+	
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="/2010/01/ourgoods-trade-school-teach-and-learn-in-nyc/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">OurGoods Trade School &#8211; teach and learn in NYC</span></a></div><div class="nav-next"><a href="/2010/01/good-and-bad-news-from-bethlehem/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Good and bad news from Bethlehem</span></a></div></div>
+	</nav>
+	</main><!-- .site-main -->
+
+	
+</div><!-- .content-area -->
+
+
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+					<div class="menu-navigation-container"><ul id="menu-navigation-2" class="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/">Projects</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/">@unterbahn</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+			
+							<nav class="social-navigation" role="navigation" aria-label="Footer Social Links Menu">
+					<div class="menu-navigation-container"><ul id="menu-navigation-3" class="social-links-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/"><span class="screen-reader-text">Projects</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/"><span class="screen-reader-text">@unterbahn</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren"><span class="screen-reader-text">Code</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren"><span class="screen-reader-text">Public Lab</span></a></li>
+</ul></div>				</nav><!-- .social-navigation -->
+			
+			<div class="site-info">
+								<span class="site-title"><a href="/" rel="home">Unterbahn</a></span>
+				<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20160816'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/functions.js?ver=20160816'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-markdown/js/prettify.min.js?ver=1.6.1'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-markdown/js/markdown.min.js?ver=1.6.1'></script>
+</body>
+</html>

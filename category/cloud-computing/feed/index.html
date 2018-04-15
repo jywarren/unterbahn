@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>cloud computing &#8211; Unterbahn</title>
+	<atom:link href="http://unterbahn.com/category/cloud-computing/feed/" rel="self" type="application/rss+xml" />
+	<link>http://unterbahn.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 11 Apr 2018 16:40:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.5</generator>
+	<item>
+		<title>Amazon s3 storage search interface</title>
+		<link>http://unterbahn.com/2009/10/amazon-s3-storage-search-interface/</link>
+		<comments>http://unterbahn.com/2009/10/amazon-s3-storage-search-interface/#comments</comments>
+		<pubDate>Wed, 07 Oct 2009 21:02:54 +0000</pubDate>
+		<dc:creator><![CDATA[Jeffrey Warren]]></dc:creator>
+				<category><![CDATA[cloud computing]]></category>
+		<category><![CDATA[code]]></category>
+
+		<guid isPermaLink="false">http://unterbahn.com/?p=940</guid>
+		<description><![CDATA[I use Amazon S3 for backup, and find that it&#8217;s hard to use because there&#8217;s no search function, so I can&#8217;t see what I&#8217;ve backed up. So, I extended s3cmd.rb (comes with the WONDERFUL s3cmd.rb rsync clone for Amazon S3) with a search command. Now I can use s3sync.rb to rsync my files up, then &#8230; <a href="http://unterbahn.com/2009/10/amazon-s3-storage-search-interface/" class="more-link">Continue reading<span class="screen-reader-text"> "Amazon s3 storage search interface"</span></a><div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"    ><span class="crp_title">Who was the lone genius inventor of the hoverboard?</span></a></li><li><a href="http://unterbahn.com/2016/09/somebody-please-turn-this-into-a-rock-opera/"    ><span class="crp_title">Somebody please turn this into a rock opera</span></a></li><li><a href="http://unterbahn.com/alerts/"    ><span class="crp_title">Alerts</span></a></li><li><a href="http://unterbahn.com/2015/09/misconceptions-about-oshwas-open-source-hardware-certification-v1/"    ><span class="crp_title">Misconceptions about OSHWA&#8217;s Open Source&hellip;</span></a></li><li><a href="http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/"    ><span class="crp_title">Vectorizing sketches and photos with your&hellip;</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
+				<content:encoded><![CDATA[<p>I use Amazon S3 for backup, and find that it&#8217;s hard to use because there&#8217;s no search function, so I can&#8217;t see what I&#8217;ve backed up.</p>
+<p>So, I extended s3cmd.rb (comes with the WONDERFUL <a href='http://s3sync.net/wiki'>s3cmd.rb rsync clone</a> for Amazon S3) with a search command.</p>
+<p>Now I can use s3sync.rb to rsync my files up, then type:</p>
+<blockquote><p>s3sync.rb search bucket_name:path/to/restrict/search search_term</p></blockquote>
+<p>and I get, for example:</p>
+<blockquote><p>backup/2009/spatial/jeff-spatial-vertical.key<br />
+backup/2009/spatial/spatial-assignment-1-jeff.pdf<br />
+backup/2009/spatial/spatial-assignment-1.key<br />
+backup/2009/spatial/spatial-assignment-1.key.zip<br />
+backup/2009/spatial/spatial-interface<br />
+backup/2009/spatial/spatial-lecture-1<br />
+backup/2009/spatial/spatial-lecture-1.key<br />
+backup/2009/spatial/spatial-lecture-1.key.zip<br />
+backup/2009/spatial/spatial-lecture-1/spatial-lecture-1.key<br />
+backup/2009/spatial/spatial-lecture-1/spatial-lecture-1.pdf<br />
+backup/2009/spatial/spatial-lecture-3.key<br />
+backup/2009/spatial/spatial-lecture-3.mov<br />
+backup/2009/spatial/spatial-lecture-3.pdf<br />
+backup/2009/spatial/spatial-uploads<br />
+backup/2009/spatial/spatial-wayfinding.key<br />
+you just spent 6.0e-05 cents</p></blockquote>
+<p>The last line is because the price of making a list request in s3 is $0.01 per 1000 requests in the US; so I thought it&#8217;d be a good idea to tell people how much they&#8217;re spending. </p>
+<p>I&#8217;ll try to commit this to the main s3sync.net codebase, but for now you can just download it here: <a href='http://unterbahn.com/wp-content/uploads/2009/10/s3sync.zip'>s3sync</a></p>
+<div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"    ><span class="crp_title">Who was the lone genius inventor of the hoverboard?</span></a></li><li><a href="http://unterbahn.com/2016/09/somebody-please-turn-this-into-a-rock-opera/"    ><span class="crp_title">Somebody please turn this into a rock opera</span></a></li><li><a href="http://unterbahn.com/alerts/"    ><span class="crp_title">Alerts</span></a></li><li><a href="http://unterbahn.com/2015/09/misconceptions-about-oshwas-open-source-hardware-certification-v1/"    ><span class="crp_title">Misconceptions about OSHWA&#8217;s Open Source&hellip;</span></a></li><li><a href="http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/"    ><span class="crp_title">Vectorizing sketches and photos with your&hellip;</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
+			<wfw:commentRss>http://unterbahn.com/2009/10/amazon-s3-storage-search-interface/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>As cloud computing becomes more powerful and flexible, I do think we’ll need less and less&#8230;</title>
+		<link>http://unterbahn.com/2008/02/as-cloud-computing-becomes-more-powerful-and-flexible-i-do-think-we%e2%80%99ll-need-less-and-less/</link>
+		<pubDate>Sat, 16 Feb 2008 05:12:00 +0000</pubDate>
+		<dc:creator><![CDATA[unterbahn]]></dc:creator>
+				<category><![CDATA[cloud computing]]></category>
+		<category><![CDATA[olpc]]></category>
+
+		<guid isPermaLink="false">http://strangethoughts.tumblr.com/post/26465909</guid>
+		<description><![CDATA[<p>As cloud computing becomes more powerful and flexible, I do think we’ll need less and less powerful personal computers… still, 1 week at 1024x768 was enough to teach me the value of a nice monitor.</p>
+
+<p>The OLPC keyboard was too tiny for my hands, or I’d give up full sized keyboards and the Mac OS forever. I think.</p>
+
+<p>Number 1 thing I’d miss on Mac OS? <a href="http://www.omnigroup.com/applications/omnigraffle/">Omnigraffle</a>.</p><div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/04/record-cutter-v2-recording-and-portable-studio/"    ><span class="crp_title">Record cutter v2 recording and portable studio</span></a></li><li><a href="http://unterbahn.com/2016/03/ode-to-my-just-stolen-bike/"    ><span class="crp_title">Ode to my just-stolen bike</span></a></li><li><a href="http://unterbahn.com/solidarity/"    ><span class="crp_title">Solidarity Economy</span></a></li><li><a href="http://unterbahn.com/2016/04/mini-autoprogettazione/"    ><span class="crp_title">Mini Autoprogettazione</span></a></li><li><a href="http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/"    ><span class="crp_title">Vectorizing sketches and photos with your&hellip;</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
+				<content:encoded><![CDATA[<p>As cloud computing becomes more powerful and flexible, I do think we’ll need less and less powerful personal computers… still, 1 week at 1024&#215;768 was enough to teach me the value of a nice monitor.</p>
+<p>The OLPC keyboard was too tiny for my hands, or I’d give up full sized keyboards and the Mac OS forever. I think.</p>
+<p>Number 1 thing I’d miss on Mac OS? <a href="http://www.omnigroup.com/applications/omnigraffle/">Omnigraffle</a>.</p>
+<div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/04/record-cutter-v2-recording-and-portable-studio/"    ><span class="crp_title">Record cutter v2 recording and portable studio</span></a></li><li><a href="http://unterbahn.com/2016/03/ode-to-my-just-stolen-bike/"    ><span class="crp_title">Ode to my just-stolen bike</span></a></li><li><a href="http://unterbahn.com/solidarity/"    ><span class="crp_title">Solidarity Economy</span></a></li><li><a href="http://unterbahn.com/2016/04/mini-autoprogettazione/"    ><span class="crp_title">Mini Autoprogettazione</span></a></li><li><a href="http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/"    ><span class="crp_title">Vectorizing sketches and photos with your&hellip;</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
+			</item>
+		<item>
+		<title>Amazon AWS supercomputing</title>
+		<link>http://unterbahn.com/2008/02/amazon-aws-supercomputing/</link>
+		<pubDate>Fri, 15 Feb 2008 19:26:02 +0000</pubDate>
+		<dc:creator><![CDATA[unterbahn]]></dc:creator>
+				<category><![CDATA[cloud computing]]></category>
+
+		<guid isPermaLink="false">http://strangethoughts.tumblr.com/post/26435578</guid>
+		<description><![CDATA[<p>Is anyone selling distributed parallel processing to universities and laboratories based on Amazon’s <a href="http://aws.amazon.com/">cloud computing initiative</a>? Even if the base price per teraflop isn’t great, you can scale linearly and you don’t need any physical space at all… it seems like there would be a lot of benefits. </p>
+<p> There is some discussion on the idea <a href="http://aws.typepad.com/aws/2007/06/amazon_ec2_for_.html">here</a>, but I haven’t seen any serious implementations.</p><div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"    ><span class="crp_title">Who was the lone genius inventor of the hoverboard?</span></a></li><li><a href="http://unterbahn.com/2016/03/im-starting-a-record-label/"    ><span class="crp_title">I&#8217;m starting a record label</span></a></li><li><a href="http://unterbahn.com/2015/09/misconceptions-about-oshwas-open-source-hardware-certification-v1/"    ><span class="crp_title">Misconceptions about OSHWA&#8217;s Open Source&hellip;</span></a></li><li><a href="http://unterbahn.com/2016/09/somebody-please-turn-this-into-a-rock-opera/"    ><span class="crp_title">Somebody please turn this into a rock opera</span></a></li><li><a href="http://unterbahn.com/2015/12/comments-on-the-union-square-neighborhood-plan/"    ><span class="crp_title">Comments on the Union Square Neighborhood Plan</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
+				<content:encoded><![CDATA[<p>Is anyone selling distributed parallel processing to universities and laboratories based on Amazon’s <a href="http://aws.amazon.com/">cloud computing initiative</a>? Even if the base price per teraflop isn’t great, you can scale linearly and you don’t need any physical space at all… it seems like there would be a lot of benefits. </p>
+<p> There is some discussion on the idea <a href="http://aws.typepad.com/aws/2007/06/amazon_ec2_for_.html">here</a>, but I haven’t seen any serious implementations.</p>
+<div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"    ><span class="crp_title">Who was the lone genius inventor of the hoverboard?</span></a></li><li><a href="http://unterbahn.com/2016/03/im-starting-a-record-label/"    ><span class="crp_title">I&#8217;m starting a record label</span></a></li><li><a href="http://unterbahn.com/2015/09/misconceptions-about-oshwas-open-source-hardware-certification-v1/"    ><span class="crp_title">Misconceptions about OSHWA&#8217;s Open Source&hellip;</span></a></li><li><a href="http://unterbahn.com/2016/09/somebody-please-turn-this-into-a-rock-opera/"    ><span class="crp_title">Somebody please turn this into a rock opera</span></a></li><li><a href="http://unterbahn.com/2015/12/comments-on-the-union-square-neighborhood-plan/"    ><span class="crp_title">Comments on the Union Square Neighborhood Plan</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
+			</item>
+	</channel>
+</rss>

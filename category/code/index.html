@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+<base href="" />
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>code &#8211; Unterbahn</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Comments Feed" href="/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; code Category Feed" href="/category/code/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.5"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crp-style-rounded-thumbs-css'  href='/wp-content/plugins/contextual-related-posts/css/default-style.css?ver=4.9.5' type='text/css' media='all' />
+<style id='crp-style-rounded-thumbs-inline-css' type='text/css'>
+
+.crp_related a {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+.crp_related img {
+  max-width: 50px;
+  margin: auto;
+}
+.crp_related .crp_title {
+  width: 50px;
+}
+                
+</style>
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css'  href='/wp-content/themes/twentysixteen/style.css?ver=4.9.5' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='/wp-content/themes/twentysixteen/css/ie.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='/wp-content/themes/twentysixteen/css/ie8.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='/wp-content/themes/twentysixteen/css/ie7.css?ver=20160816' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.5" />
+</head>
+
+<body class="archive category category-code category-35 group-blog no-sidebar hfeed">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="/" rel="home">Unterbahn</a></p>
+									</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-navigation-container"><ul id="menu-navigation" class="primary-menu"><li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/">Projects</a></li>
+<li id="menu-item-2480" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/">@unterbahn</a></li>
+<li id="menu-item-2379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li id="menu-item-2380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+													<nav id="social-navigation" class="social-navigation" role="navigation" aria-label="Social Links Menu">
+								<div class="menu-navigation-container"><ul id="menu-navigation-1" class="social-links-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/"><span class="screen-reader-text">Projects</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/"><span class="screen-reader-text">@unterbahn</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren"><span class="screen-reader-text">Code</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren"><span class="screen-reader-text">Public Lab</span></a></li>
+</ul></div>							</nav><!-- .social-navigation -->
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">Category: code</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-1837" class="post-1837 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2012/09/strange-idea-js-library-for-interfacing-with-any-circuit-via-webcam/" rel="bookmark">Strange idea: JS library for interfacing with any circuit via webcam</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>I&#8217;ve been pondering the odd way that our use of a webcam in the <a href="http://publiclaboratory.org/tool/spectrometer">PLOTS spectrometer</a> allows connecting directly from HTML5/JavaScript to a spectrometer over USB. What if we used a standardized array of LEDs &#8212; say, an Arduino shield of &#8217;em &#8212; in a dark box facing a webcam. And wrote a standardized library for reading analog &#038; digital pins from the video output&#8230; You could then plug many different circuits directly into a webpage.</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2012/09/strange-idea-js-library-for-interfacing-with-any-circuit-via-webcam/" rel="bookmark"><time class="entry-date published updated" datetime="2012-09-09T11:42:56+00:00">September 9, 2012</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1779" class="post-1779 post type-post status-publish format-standard hentry category-code tag-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2012/02/hello-worlds/" rel="bookmark">Hello worlds</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><script src="https://gist.github.com/1777386.js"> </script><br />
+<script src="https://gist.github.com/1777370.js"></script><br />
+<script src="https://gist.github.com/1777337.js"> </script></p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2012/02/hello-worlds/" rel="bookmark"><time class="entry-date published" datetime="2012-02-08T20:48:13+00:00">February 8, 2012</time><time class="updated" datetime="2014-03-22T12:57:23+00:00">March 22, 2014</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="/tag/code/" rel="tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1564" class="post-1564 post type-post status-publish format-standard hentry category-code tag-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/11/object-hasownproperty-in-javascript/" rel="bookmark">Object.hasOwnProperty() in JavaScript</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>On <a href="http://stackoverflow.com/questions/208016/how-to-list-the-properties-of-a-javascript-object">StackOverflow</a>, user Pablo Cabrera points out:</p>
+<blockquote><p>As slashnick pointed out, you can use the &#8220;for in&#8221; construct to iterate over an object for its attribute names. However you&#8217;ll be iterating over all attribute names in the object&#8217;s prototype chain. If you want to iterate only over the object&#8217;s own attributes, you can make use of the Object#hasOwnProperty() method. Thus having the following.</p>
+<p>for (var key in obj) {<br />
+    if (obj.hasOwnProperty(key)) {<br />
+        /* useful code here */<br />
+    }<br />
+}
+</p></blockquote>
+<p>Wish I&#8217;d known of that a year ago.</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/11/object-hasownproperty-in-javascript/" rel="bookmark"><time class="entry-date published" datetime="2010-11-07T13:27:33+00:00">November 7, 2010</time><time class="updated" datetime="2014-03-22T13:01:46+00:00">March 22, 2014</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span><span class="tags-links"><span class="screen-reader-text">Tags </span><a href="/tag/code/" rel="tag">code</a></span><span class="comments-link"><a href="/2010/11/object-hasownproperty-in-javascript/#comments">1 Comment<span class="screen-reader-text"> on Object.hasOwnProperty() in JavaScript</span></a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1399" class="post-1399 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/04/need-for-a-scene-graph-in-canvas/" rel="bookmark">Need for a scene graph in Canvas</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><a href="/wp-content/uploads/2010/04/camima.png"><img src="/wp-content/uploads/2010/04/camima.png" alt="" title="camima" width="500" height="285" class="alignnone size-full wp-image-1400" /></a></p>
+<p>Samuli Kaipiainen and Matti Paksula from the University of Helsinki Department of Computer Science wrote a great overview of SVG and Canvas performance issues. The above summarizes some of their thoughts specifically about the need for a scene graph, something I&#8217;ve wished for (esp. in regard to WebGL).</p>
+<p><a href="http://svgopen.org/2009/papers/54-SVG_vs_Canvas_on_Trivial_Drawing_Application/#need_for_scene_graph">Read more</a></p>
+<p>And I&#8217;m not just putting this up because they referenced my post on <a href="/2009/08/svg-vs/">SVG vs. Canvas</a>. Really.</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/04/need-for-a-scene-graph-in-canvas/" rel="bookmark"><time class="entry-date published updated" datetime="2010-04-20T14:54:01+00:00">April 20, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span><span class="comments-link"><a href="/2010/04/need-for-a-scene-graph-in-canvas/#comments">2 Comments<span class="screen-reader-text"> on Need for a scene graph in Canvas</span></a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1392" class="post-1392 post type-post status-publish format-standard hentry category-blog category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/04/instiki-permission-denied-problem/" rel="bookmark">Instiki &#8216;Permission denied&#8217; problem</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>I run a <a href="http://wiki.cartagen.org">few</a> Instiki <a href="http://wiki.grassrootsmapping.org">sites</a> on <a href="http://www.modrails.com/">Phusion Passenger</a>, and they occasionally break &#8211; namely, they give a &#8216;Permission denied&#8217; message which is hard to track.</p>
+<p>The problem is that there are temp files like <code>/tmp/passenger.1234</code> which have some kind of permissions problem. </p>
+<p>To resolve this, you can simply delete those files, like with:</p>
+<p><code>sudo rm -r /tmp/passenger*</code></p>
+<p>and reboot Instiki (Apache, really):</p>
+<p><code>sudo apachectl graceful</code></p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/04/instiki-permission-denied-problem/" rel="bookmark"><time class="entry-date published updated" datetime="2010-04-13T15:12:19+00:00">April 13, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/blog/" rel="category tag">Blog</a>, <a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1333" class="post-1333 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/03/instiki-add-an-auto-redirect-to-the-default-web/" rel="bookmark">Instiki: add an auto redirect to the default web</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>I have a few Instiki instances out there: <a href="http://wiki.grassrootsmapping.org">wiki.grassrootsmapping.org</a> and <a href="http://wiki.cartagen.org">wiki.cartagen.org</a> &#8211; and the Grassroots Mapping wiki now has two &#8216;webs&#8217;. Initially when I added a second web, the front page at wiki.grassrootsmapping.org began showing a list of webs instead of the HomePage of the main web&#8230; if you&#8217;re an Instiki user you&#8217;ll know what I&#8217;m talking about. You can see the page I saw here: <a href="http://wiki.grassrootsmapping.org/web_list">wiki.grassrootsmapping.org/web_list</a></p>
+<p>Instiki allows you to define a DEFAULT_WEB in your <b>/config/environment.rb</b>, but it won&#8217;t redirect the web root to that web&#8217;s HomePage, which would seem to be the point. Darn. So I <a href="http://github.com/jywarren/instiki">forked and patched Instiki on Github</a>, adding the following code to replace line 26 of <b>/app/controllers/wiki_controller.rb</b>:</p>
+<pre>      if defined? DEFAULT_WEB
+        @web_name = DEFAULT_WEB
+        redirect_home
+      else
+        redirect_to :action => 'web_list'
+      end
+</pre>
+<p>Now if I go to <a href="http://wiki.grassrootsmapping.org">wiki.grassrootsmapping.org</a>, I see the HomePage of my default web. Hooray!</p>
+<p><em><b>Update:</b> OK, my bad. This is unnecessary:</em></p>
+<p>As <b>distler</b> <a href="http://github.com/jywarren/instiki/commit/fc88bc64e47bd92068058ddb5e41b45f49c7a2c4#comments">pointed out on Github</a>, defining DEFAULT_WEB should work out of the box. Why didn&#8217;t it work for me, I wondered?</p>
+<p>Well, I put the line:</p>
+<pre>DEFAULT_WEB = 'wiki'</pre>
+<p>in environment.rb, but I put it OUTSIDE the <b>Rails::Initializer.run do |config|</b> block. Putting that line inside that code block solved my problem. </p>
+<p>I&#8217;m leaving this all up for future generations to learn from my mistakes. (Most likely me in a year or so.)</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/03/instiki-add-an-auto-redirect-to-the-default-web/" rel="bookmark"><time class="entry-date published" datetime="2010-03-04T08:12:06+00:00">March 4, 2010</time><time class="updated" datetime="2010-03-06T10:11:38+00:00">March 6, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1287" class="post-1287 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/02/cartagen-is-now-on-github/" rel="bookmark">Cartagen is now on Github</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><a href="http://github.com/jywarren/cartage"><img src="/wp-content/uploads/2010/02/cartagen-github.png" alt="" title="cartagen-github" width="441" height="327" class="alignnone size-full wp-image-1288" srcset="/wp-content/uploads/2010/02/cartagen-github.png 441w, /wp-content/uploads/2010/02/cartagen-github-404x300.png 404w" sizes="(max-width: 441px) 85vw, 441px" /></a></p>
+<p><a href="http://github.com/jywarren/cartagen">http://github.com/jywarren/cartagen</a></p>
+<p>Finally.</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/02/cartagen-is-now-on-github/" rel="bookmark"><time class="entry-date published updated" datetime="2010-02-20T10:01:34+00:00">February 20, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1222" class="post-1222 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/01/tidying-up-cartagen-a-bit-with-tips-from-dev-opera-com/" rel="bookmark">Tidying up Cartagen a bit with tips from dev.opera.com</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><a href="http://dev.opera.com/articles/view/efficient-javascript/?page=2">dev.opera.com</a> has a great series of tips for improving JavaScript performance. Example:</p>
+<blockquote><p></p>
+<h3 id="stringaccumulator">Use strings accumulator-style</h3>
+<p>String concatenation can be an expensive process. Using the &#8220;+&#8221; operator does not wait for the result to be assigned to a variable. Instead, it creates a new string in memory, assigns its result to that string, and it is that new string that may be assigned to a variable. The following code shows a common assignment of a concatenated string:</p>
+<p>&#8220;a += &#8216;x&#8217; + &#8216;y&#8217;;&#8221;</p>
+<p>That code would be evaluated by firstly creating a temporary string in memory, assigning the concatenated value of &#8216;xy&#8217;, then concatenating that with the current value of &#8220;a&#8221;, and finally assigning the resulting value of that to &#8220;a&#8221;. The following code uses two separate commands, but because it assigns directly to &#8220;a&#8221; each time, the temporary string is not used. The resulting code is around 20% faster in many current browsers, and potentially requires less memory, as it does not need to temporarily store the concatenated string:</p>
+<p>a += &#8216;x&#8217;;<br />
+a += &#8216;y&#8217;;
+</p></blockquote>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/01/tidying-up-cartagen-a-bit-with-tips-from-dev-opera-com/" rel="bookmark"><time class="entry-date published updated" datetime="2010-01-31T11:22:14+00:00">January 31, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-1159" class="post-1159 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/" rel="bookmark">Fixing Cache Images plugin in WordPress on MediaTemple</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>Matt Mullenweg&#8217;s great <a href="http://svn.wp-plugins.org/cache-images/trunk/">Cache Images plugin</a> for WordPress (Just go to the Plugins > Add New page in your WordPress install and search for it) lets you copy any hotlinked images on your blog into your own /uploads/ folder for safekeeping (and to be polite to others&#8217; servers!), and I love it. But when you first install it, it often chokes, especially on MediaTemple. I&#8217;ve had problems with this more than once, so I thought I&#8217;d jot this down for future reference and to help anyone else struggling with the same issues. The two problems are a) permissions for the /uploads/ folder, and b) the file_get_contents() function. Here&#8217;s a fix:</p>
+<p>First, you have to change the uploads directory from a long absolute path to just a relative one, so in Settings > Miscellaneous, instead of:</p>
+<p><code>/bla/bla/mediatemples/long/url/domainname/html/wp-content/uploads/</code></p>
+<p>it should say:</p>
+<p><code>wp-content/uploads</code></p>
+<p>Second, you have to change the file_get_contents() call on line 118 of the plugin file &#8220;plugins/cache-images/cache-images.php&#8221;. MediaTemple and other hosts don&#8217;t like that. But you can usually use the curl() library, so if you add the following code somewhere near the top of the file, you can use this fancy new &#8216;<b>file_get_contents_curl()</b>&#8216; function instead of the native one:</p>
+<pre>
+function file_get_contents_curl($url) {
+	$ch = curl_init();
+	
+	curl_setopt($ch, CURLOPT_HEADER, 0);
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); //Set curl to return the data instead of printing it to the browser.
+	curl_setopt($ch, CURLOPT_URL, $url);
+	
+	$data = curl_exec($ch);
+	curl_close($ch);
+	
+	return $data;
+}
+</pre>
+<p>Then all you have to do is change the call (on what USED TO BE line 118) to:</p>
+<pre>$img      = file_get_contents_curl( $b['scheme'] . '://' . $b['host'] . str_replace(' ', '%20', $b['path']) . $b['query'] );</pre>
+<p>That is, just change &#8220;file_get_contents&#8221; to &#8220;file_get_contents_curl()&#8221;.</p>
+<p>I&#8217;d do it myself for you and host the file, but it&#8217;s not my code. Hmm, can I commit this change anywhere? Matt?</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/" rel="bookmark"><time class="entry-date published" datetime="2010-01-24T11:15:19+00:00">January 24, 2010</time><time class="updated" datetime="2010-01-24T11:23:16+00:00">January 24, 2010</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span><span class="comments-link"><a href="/2010/01/fixing-cache-images-plugin-in-wordpress-on-mediatemple/#comments">4 Comments<span class="screen-reader-text"> on Fixing Cache Images plugin in WordPress on MediaTemple</span></a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<article id="post-996" class="post-996 post type-post status-publish format-standard hentry category-code">
+	<header class="entry-header">
+		
+		<h2 class="entry-title"><a href="/2009/10/ragi-on-rails-2-3/" rel="bookmark">RAGI on Rails 2.3+</a></h2>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p><a href='http://www.snapvine.com/code/ragi/'>RAGI</a>, a Ruby interface for Asterisk, allows you to handle phone calls with a Ruby on Rails application. The config/environment.rb entry has to be modified a bit for a modern Rails, since many online tutorials/resources were written in the Rails ~1.2 era, and assume WEBrick as the server. </p>
+<p>The offending line is this:</p>
+<pre>class SimpleThreadServer < WEBrick::SimpleServer</pre>
+<p>Which can be modified to:</p>
+<pre>class SimpleThreadServer < Mongrel::HttpHandler</pre>
+<p>The complete configuration you'll need to add inside your <b>Rails::Initializer.run do |config|</b> block is:</p>
+<pre>  # The following code tells Rails to start a Ragi server
+  # as a separate thread.
+  ActiveSupport::Dependencies.mechanism = :require
+  # Include your application configuration below
+  # Simple server that spawns a new thread for the server
+  class SimpleThreadServer < Mongrel::HttpHandler
+    def SimpleThreadServer.start(&#038;block)
+      Thread.new do block.call
+      end
+    end
+  end
+  require 'ragi/call_server'
+  RAGI::CallServer.new( :ServerType => SimpleThreadServer )
+</pre>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&#038;d=mm&#038;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="/2009/10/ragi-on-rails-2-3/" rel="bookmark"><time class="entry-date published" datetime="2009-10-28T09:21:32+00:00">October 28, 2009</time><time class="updated" datetime="2009-10-28T09:23:56+00:00">October 28, 2009</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="/category/code/" rel="category tag">code</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+	<nav class="navigation pagination" role="navigation">
+		<h2 class="screen-reader-text">Posts navigation</h2>
+		<div class="nav-links"><span aria-current='page' class='page-numbers current'><span class="meta-nav screen-reader-text">Page </span>1</span>
+<a class='page-numbers' href='/category/code/page/2/'><span class="meta-nav screen-reader-text">Page </span>2</a>
+<span class="page-numbers dots">&hellip;</span>
+<a class='page-numbers' href='/category/code/page/4/'><span class="meta-nav screen-reader-text">Page </span>4</a>
+<a class="next page-numbers" href="/category/code/page/2/">Next page</a></div>
+	</nav>
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+					<div class="menu-navigation-container"><ul id="menu-navigation-2" class="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/">Projects</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/">@unterbahn</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+			
+							<nav class="social-navigation" role="navigation" aria-label="Footer Social Links Menu">
+					<div class="menu-navigation-container"><ul id="menu-navigation-3" class="social-links-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="/projects/"><span class="screen-reader-text">Projects</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2480"><a href="http://instagram.com/unterbahn/"><span class="screen-reader-text">@unterbahn</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren"><span class="screen-reader-text">Code</span></a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren"><span class="screen-reader-text">Public Lab</span></a></li>
+</ul></div>				</nav><!-- .social-navigation -->
+			
+			<div class="site-info">
+								<span class="site-title"><a href="/" rel="home">Unterbahn</a></span>
+				<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<link rel='stylesheet' id='wp-markdown-prettify-css'  href='/wp-content/plugins/wp-markdown/css/prettify.css?ver=1.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20160816'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/twentysixteen/js/functions.js?ver=20160816'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.5'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-markdown/js/prettify.min.js?ver=1.6.1'></script>
+<script type='text/javascript' src='/wp-content/plugins/wp-markdown/js/markdown.min.js?ver=1.6.1'></script>
+</body>
+</html>

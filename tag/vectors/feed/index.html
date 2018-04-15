@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>vectors &#8211; Unterbahn</title>
+	<atom:link href="http://unterbahn.com/tag/vectors/feed/" rel="self" type="application/rss+xml" />
+	<link>http://unterbahn.com</link>
+	<description></description>
+	<lastBuildDate>Wed, 11 Apr 2018 16:40:54 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.5</generator>
+	<item>
+		<title>Vectorizing sketches and photos with your smartphone/web browser</title>
+		<link>http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/</link>
+		<pubDate>Tue, 11 Aug 2015 16:33:00 +0000</pubDate>
+		<dc:creator><![CDATA[Jeffrey Warren]]></dc:creator>
+				<category><![CDATA[Blog]]></category>
+		<category><![CDATA[vectors]]></category>
+
+		<guid isPermaLink="false">http://unterbahn.com/?p=2249</guid>
+		<description><![CDATA[Yesterday I wrote VectorCam, building on the excellent excellent imagetracerjs library by András Jankovics. Source AGPLv3 at https://github.com/jywarren/vectorcam. This is a pure JavaScript raster-to-vector converter, which takes images (png, jpg, gif?) and traces them into downloadable SVGs (I haven&#8217;t tried a conversion to PDF or DXF, but that&#8217;d be useful). With it, you can snap &#8230; <a href="http://unterbahn.com/2015/08/vectorizing-sketches-and-photos-with-your-smartphoneweb-browser/" class="more-link">Continue reading<span class="screen-reader-text"> "Vectorizing sketches and photos with your smartphone/web browser"</span></a><div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2015/08/office-minimal-js-drum-machine-interface/"    ><span class="crp_title">Office: minimal JS drum machine interface</span></a></li><li><a href="http://unterbahn.com/2015/09/quick-antfarm-update/"    ><span class="crp_title">Quick antfarm update</span></a></li><li><a href="http://unterbahn.com/2016/03/progress-at-the-record-company/"    ><span class="crp_title">Progress at the record company</span></a></li><li><a href="http://unterbahn.com/2016/03/im-starting-a-record-label/"    ><span class="crp_title">I&#8217;m starting a record label</span></a></li><li><a href="http://unterbahn.com/2015/08/antfarm/"    ><span class="crp_title">Antfarm</span></a></li></ul><div class="crp_clear"></div></div>]]></description>
+				<content:encoded><![CDATA[<p><a href="http://unterbahn.com/wp-content/uploads/2015/08/IMG_8462.jpg"><img src="http://unterbahn.com/wp-content/uploads/2015/08/IMG_8462-1024x768.jpg" alt="IMG_8462" width="100%" class="alignnone size-large wp-image-2250" srcset="http://unterbahn.com/wp-content/uploads/2015/08/IMG_8462-1024x768.jpg 1024w, http://unterbahn.com/wp-content/uploads/2015/08/IMG_8462-400x300.jpg 400w, http://unterbahn.com/wp-content/uploads/2015/08/IMG_8462.jpg 1280w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+<p>Yesterday I wrote <a href="http://jywarren.github.io/vectorcam/">VectorCam</a>, building on the <a href="https://github.com/jankovicsandras/imagetracerjs">excellent excellent imagetracerjs library</a> by András Jankovics. Source AGPLv3 at https://github.com/jywarren/vectorcam.</p>
+<p>This is a pure JavaScript raster-to-vector converter, which takes images (png, jpg, gif?) and traces them into downloadable SVGs (I haven&#8217;t tried a conversion to PDF or DXF, but that&#8217;d be useful).</p>
+<p>With it, you can snap a photo with your phone, and immediately vectorize it for use in print, laser cutting, or <a href="http://publiclab.org/notes/warren/07-30-2015/silhouette-cameo-desktop-paper-cutter-for-prototyping">desktop paper cutting</a>. I always thought this should exist as a web service, since it can be a pain to open up Inkscape sometimes, and this is supposed to be a pretty well-solved problem.</p>
+<p>It works on Android, fastest in Chrome &#8211; and only on Safari on iOS, probably due to Apple&#8217;s closed-browser strategy.</p>
+<p>Here&#8217;s a snap of the output from the above image, opened in Inkscape to show the vector lines:</p>
+<p><a href="http://unterbahn.com/wp-content/uploads/2015/08/Selection_001.png"><img src="http://unterbahn.com/wp-content/uploads/2015/08/Selection_001-1024x485.png" alt="Selection_001" width="100%" class="alignnone size-large wp-image-2251" srcset="http://unterbahn.com/wp-content/uploads/2015/08/Selection_001-1024x485.png 1024w, http://unterbahn.com/wp-content/uploads/2015/08/Selection_001-500x237.png 500w, http://unterbahn.com/wp-content/uploads/2015/08/Selection_001.png 1176w" sizes="(max-width: 709px) 85vw, (max-width: 909px) 67vw, (max-width: 1362px) 62vw, 840px" /></a></p>
+<p>András&#8217; library does a fantastic job; all I did was connect it to a file upload form and ensure the SVG downloads well, and make a nice interface with a settings dialog. This last could be expanded, as well.</p>
+<p><iframe height="500px" width="100%" style="border:0;" src="http://jywarren.github.io/vectorcam/"></iframe></p>
+<div class="crp_related "><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2015/08/office-minimal-js-drum-machine-interface/"    ><span class="crp_title">Office: minimal JS drum machine interface</span></a></li><li><a href="http://unterbahn.com/2015/09/quick-antfarm-update/"    ><span class="crp_title">Quick antfarm update</span></a></li><li><a href="http://unterbahn.com/2016/03/progress-at-the-record-company/"    ><span class="crp_title">Progress at the record company</span></a></li><li><a href="http://unterbahn.com/2016/03/im-starting-a-record-label/"    ><span class="crp_title">I&#8217;m starting a record label</span></a></li><li><a href="http://unterbahn.com/2015/08/antfarm/"    ><span class="crp_title">Antfarm</span></a></li></ul><div class="crp_clear"></div></div>]]></content:encoded>
+			</item>
+	</channel>
+</rss>
