@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="pingback" href="http://unterbahn.com/xmlrpc.php">
+		<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Metric dimensions of geohash partitions at the equator &#8211; Unterbahn</title>
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Feed" href="http://unterbahn.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Comments Feed" href="http://unterbahn.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Unterbahn &raquo; Metric dimensions of geohash partitions at the equator Comments Feed" href="http://unterbahn.com/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/unterbahn.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.5.2"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='twentysixteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Merriweather%3A400%2C700%2C900%2C400italic%2C700italic%2C900italic%7CMontserrat%3A400%2C700%7CInconsolata%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://unterbahn.com/wp-content/themes/twentysixteen/genericons/genericons.css?ver=3.4.1' type='text/css' media='all' />
+<link rel='stylesheet' id='twentysixteen-style-css'  href='http://unterbahn.com/wp-content/themes/twentysixteen/style.css?ver=4.5.2' type='text/css' media='all' />
+<!--[if lt IE 10]>
+<link rel='stylesheet' id='twentysixteen-ie-css'  href='http://unterbahn.com/wp-content/themes/twentysixteen/css/ie.css?ver=20160412' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentysixteen-ie8-css'  href='http://unterbahn.com/wp-content/themes/twentysixteen/css/ie8.css?ver=20160412' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentysixteen-ie7-css'  href='http://unterbahn.com/wp-content/themes/twentysixteen/css/ie7.css?ver=20160412' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='wp-markdown-editor-css'  href='http://unterbahn.com/wp-content/plugins/wp-markdown/css/markdown-editor.css?ver=1.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-markdown-prettify-css'  href='http://unterbahn.com/wp-content/plugins/wp-markdown/css/prettify.css?ver=1.4' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/themes/twentysixteen/js/html5.js?ver=3.7.3'></script>
+<![endif]-->
+<script type='text/javascript' src='http://unterbahn.com/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/plugins/wp-markdown/js/prettify.js?ver=1.4'></script>
+<link rel='https://api.w.org/' href='http://unterbahn.com/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://unterbahn.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://unterbahn.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Grassroots Mapping: Balloon test #3 success' href='http://unterbahn.com/2009/11/grassroots-aerial-map/' />
+<link rel='next' title='Wikimapa by Rede Jovem' href='http://unterbahn.com/2009/11/wikimapa-by-rede-jovem/' />
+<meta name="generator" content="WordPress 4.5.2" />
+<link rel="canonical" href="http://unterbahn.com/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/" />
+<link rel='shortlink' href='http://unterbahn.com/?p=1079' />
+<link rel="alternate" type="application/json+oembed" href="http://unterbahn.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Funterbahn.com%2F2009%2F11%2Fmetric-dimensions-of-geohash-partitions-at-the-equator%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://unterbahn.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Funterbahn.com%2F2009%2F11%2Fmetric-dimensions-of-geohash-partitions-at-the-equator%2F&#038;format=xml" />
+</head>
+
+<body class="single single-post postid-1079 single-format-standard group-blog no-sidebar">
+<div id="page" class="site">
+	<div class="site-inner">
+		<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-header-main">
+				<div class="site-branding">
+					
+											<p class="site-title"><a href="http://unterbahn.com/" rel="home">Unterbahn</a></p>
+									</div><!-- .site-branding -->
+
+									<button id="menu-toggle" class="menu-toggle">Menu</button>
+
+					<div id="site-header-menu" class="site-header-menu">
+													<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="Primary Menu">
+								<div class="menu-navigation-container"><ul id="menu-navigation" class="primary-menu"><li id="menu-item-2378" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="http://unterbahn.com/projects/">Projects</a></li>
+<li id="menu-item-2379" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li id="menu-item-2380" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>							</nav><!-- .main-navigation -->
+						
+											</div><!-- .site-header-menu -->
+							</div><!-- .site-header-main -->
+
+					</header><!-- .site-header -->
+
+		<div id="content" class="site-content">
+
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+		
+<article id="post-1079" class="post-1079 post type-post status-publish format-standard hentry category-blog">
+	<header class="entry-header">
+		<h1 class="entry-title">Metric dimensions of geohash partitions at the equator</h1>	</header><!-- .entry-header -->
+
+	
+	
+	<div class="entry-content">
+		<p>The <i>Geohash</i> algorithm is a useful way to describe locations on the earth using a single string of a-z, 0-9 characters. They can be thought of as rectangular subdivisions of the Earth&#8217;s surface. Learn more here: <a href="http://en.wikipedia.org/wiki/Geohash">Geohash at Wikipedia</a>. They were invented by Gustavo Niemeyer in 2008.</p>
+<p>It&#8217;s good to get an idea of how large a rectangle a given geohash describes, but this changes depending on your latitude. At the equator, geohashes are biggest, so you need more characters to describe an area of a given size, or a location of a given precision.</p>
+<p>In Cartagen I&#8217;m using geohashes to report geodata by text message, so it&#8217;s very useful to know how long your geohash code will be to describe, say, the area of a building, a soccer field, or a street corner. I did a quick calculation for the equator, which is the worst-case scenario:</p>
+<h3>Dimensions of geohashes of length <i>n</i>:</h3>
+<table>
+<thead>
+<tr>
+<th>N</th>
+<th>Longitude</th>
+<th>Latitude</th>
+<th>east/west distance at equator</th>
+<th>north/south distance at equator</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style='text-align: left;'>12:</td>
+<td style='text-align: left;'>0.00000033527612686157227</td>
+<td style='text-align: left;'>0.00000016763806343078613</td>
+<td style='text-align: left;'>~3.7cm</td>
+<td style='text-align: left;'>~1.8cm</td>
+</tr>
+<tr>
+<td style='text-align: left;'>11:</td>
+<td style='text-align: left;'>0.000001341104507446289</td>
+<td style='text-align: left;'>0.000001341104507446289</td>
+<td style='text-align: left;'>~14.9cm</td>
+<td style='text-align: left;'>~14.9cm</td>
+</tr>
+<tr>
+<td style='text-align: left;'>10:</td>
+<td style='text-align: left;'>0.000010728836059570312</td>
+<td style='text-align: left;'>0.000005364418029785156</td>
+<td style='text-align: left;'>~1.19m</td>
+<td style='text-align: left;'>~0.60m</td>
+</tr>
+<tr>
+<td style='text-align: left;'>9:</td>
+<td style='text-align: left;'>0.00004291534423828125</td>
+<td style='text-align: left;'>0.00004291534423828125</td>
+<td style='text-align: left;'>~4.78m</td>
+<td style='text-align: left;'>~4.78m</td>
+</tr>
+<tr>
+<td style='text-align: left;'>8:</td>
+<td style='text-align: left;'>0.00034332275390625</td>
+<td style='text-align: left;'>0.000171661376953125</td>
+<td style='text-align: left;'>~38.2m</td>
+<td style='text-align: left;'>~19.1m</td>
+</tr>
+<tr>
+<td style='text-align: left;'>7:</td>
+<td style='text-align: left;'>0.001373291015625</td>
+<td style='text-align: left;'>0.001373291015625</td>
+<td style='text-align: left;'>~152.8m</td>
+<td style='text-align: left;'>~152.8m</td>
+</tr>
+<tr>
+<td style='text-align: left;'>6:</td>
+<td style='text-align: left;'>0.010986328125</td>
+<td style='text-align: left;'>0.0054931640625</td>
+<td style='text-align: left;'>~1.2km</td>
+<td style='text-align: left;'>~0.61km</td>
+</tr>
+<tr>
+<td style='text-align: left;'>5:</td>
+<td style='text-align: left;'>0.0439453125</td>
+<td style='text-align: left;'>0.0439453125</td>
+<td style='text-align: left;'>~4.9km</td>
+<td style='text-align: left;'>~4.9km</td>
+</tr>
+<tr>
+<td style='text-align: left;'>4:</td>
+<td style='text-align: left;'>0.3515625</td>
+<td style='text-align: left;'>0.17578125</td>
+<td style='text-align: left;'>~39km</td>
+<td style='text-align: left;'>~19.6km</td>
+</tr>
+<tr>
+<td style='text-align: left;'>3:</td>
+<td style='text-align: left;'>1.40625</td>
+<td style='text-align: left;'>1.40625</td>
+<td style='text-align: left;'>~157km</td>
+<td style='text-align: left;'>~157km</td>
+</tr>
+<tr>
+<td style='text-align: left;'>2:</td>
+<td style='text-align: left;'>11.25</td>
+<td style='text-align: left;'>5.625</td>
+<td style='text-align: left;'>~1252km</td>
+<td style='text-align: left;'>~626km</td>
+</tr>
+<tr>
+<td style='text-align: left;'>1:</td>
+<td style='text-align: left;'>45</td>
+<td style='text-align: left;'>45</td>
+<td style='text-align: left;'>~5018km</td>
+<td style='text-align: left;'>~5018km</td>
+</tr>
+</tbody>
+</table>
+<p>I think this is right but if you find an error please tell me. I put it up on the Cartagen Wiki here: <a href="http://wiki.cartagen.org/wiki/show/GeoHashes">GeoHashes</a></p>
+<p><b>Update:</b> if you want to know how big a geohash is near you, it&#8217;s a bit tough &#8211; it varies depending on what latitude you&#8217;re at. Someone ought to make a nice map of geohash sizes, like this one which is NOT to scale or using real values&#8230; it&#8217;s just a sketch:</p>
+<p><a href="http://unterbahn.com/wp-content/uploads/2009/11/geohash.png"><img src="http://unterbahn.com/wp-content/uploads/2009/11/geohash-410x300.png" alt="" title="geohash" width="410" height="300" class="alignnone size-medium wp-image-1914" srcset="http://unterbahn.com/wp-content/uploads/2009/11/geohash-410x300.png 410w, http://unterbahn.com/wp-content/uploads/2009/11/geohash.png 990w" sizes="(max-width: 410px) 85vw, 410px" /></a></p>
+<div id="crp_related" class="crp_related"><h3>Related Posts:</h3><ul><li><a href="http://unterbahn.com/2016/01/who-was-the-lone-genius-inventor-of-the-hoverboard/"     class="crp_title">Who was the lone genius inventor of the hoverboard?</a></li><li><a href="http://unterbahn.com/2014/11/partial-feldhellschreiber-encoder-in-javascript/"     class="crp_title">Partial Feldhellschreiber encoder in JavaScript</a></li><li><a href="http://unterbahn.com/2015/12/comments-on-the-union-square-neighborhood-plan/"     class="crp_title">Comments on the Union Square Neighborhood Plan</a></li><li><a href="http://unterbahn.com/2014/08/safety-coffins/"     class="crp_title">Safety Coffins</a></li><li><a href="http://unterbahn.com/2016/03/ode-to-my-just-stolen-bike/"     class="crp_title">Ode to my just-stolen bike</a></li></ul></div>	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="byline"><span class="author vcard"><img alt='' src='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=49&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed820befcb541445eeb793842ef74a63?s=98&amp;d=mm&amp;r=g 2x' class='avatar avatar-49 photo' height='49' width='49' /><span class="screen-reader-text">Author </span> <a class="url fn n" href="http://unterbahn.com/author/admin/">Jeffrey Warren</a></span></span><span class="posted-on"><span class="screen-reader-text">Posted on </span><a href="http://unterbahn.com/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/" rel="bookmark"><time class="entry-date published" datetime="2009-11-22T10:36:04+00:00">November 22, 2009</time><time class="updated" datetime="2013-12-06T09:52:36+00:00">December 6, 2013</time></a></span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="http://unterbahn.com/category/blog/" rel="category tag">Blog</a></span>			</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			2 thoughts on &ldquo;Metric dimensions of geohash partitions at the equator&rdquo;		</h2>
+
+		
+		<ol class="comment-list">
+					<li id="comment-12609" class="comment even thread-even depth-1">
+			<article id="div-comment-12609" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/29669b3c299f92a8b3edccde62c725c1?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/29669b3c299f92a8b3edccde62c725c1?s=84&amp;d=mm&amp;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='http://y-and-o-jewelry.com' rel='external nofollow' class='url'>Ruby</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://unterbahn.com/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/#comment-12609">
+							<time datetime="2014-06-20T16:45:00+00:00">
+								June 20, 2014 at 4:45 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Thanks for one’s marvelous posting! I actually enjoyed reading it, you can be a great author.I will always bookmark your blog and may come back in the future.I want to encourage continue your great job, have a nice day!</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-13880" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-13880" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://2.gravatar.com/avatar/549bc4f4cf6ea4f8384d308484b8bab5?s=42&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/549bc4f4cf6ea4f8384d308484b8bab5?s=84&amp;d=mm&amp;r=g 2x' class='avatar avatar-42 photo' height='42' width='42' />						<b class="fn"><a href='http://www.moasisglobal.com' rel='external nofollow' class='url'>carl</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://unterbahn.com/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/#comment-13880">
+							<time datetime="2015-08-29T12:45:25+00:00">
+								August 29, 2015 at 12:45 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Nice intro ! but i&#8217;ll add there is no  a, i, l, o   in geohash string, (base32: 10 numbers and 22 letters)</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+	
+	
+					<div id="respond" class="comment-respond">
+			<h2 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2009/11/metric-dimensions-of-geohash-partitions-at-the-equator/#respond" style="display:none;">Cancel reply</a></small></h2>				<form action="http://unterbahn.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate>
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><div class='wmd-panel'><div id='wmd-button-barcomment'></div><div id='wmd-button-bar-help'> <p>To create code blocks or other preformatted text, indent by four spaces:</p>
+        <pre class='wmd-help'><span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span>This will be displayed in a monospaced font. The first four 
+<span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span>spaces will be stripped off, but all other whitespace
+<span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span>will be preserved.
+<span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span>Markdown is turned off in code blocks:
+<span class='wmd-help-spaces'>&nbsp;&nbsp;&nbsp;&nbsp;</span> [This is not a link](http://example.com)
+</pre>
+        <p>
+            To create not a block, but an inline code span, use backticks:
+        </p>
+        <pre class='wmd-help'>Here is some inline `code`.</pre> <p>For more help see <a href='http://daringfireball.net/projects/markdown/syntax' rel='no-follow'> http://daringfireball.net/projects/markdown/syntax</a></p></div><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" aria-required="true" required="required"></textarea></p><div id='wmd-previewcomment' class='wmd-panel wmd-preview prettyprint'></div></div><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="url" value="" size="30" maxlength="200" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='1079' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="353302bbae" /></p>				</form>
+					</div><!-- #respond -->
+		
+</div><!-- .comments-area -->
+
+	<nav class="navigation post-navigation" role="navigation">
+		<h2 class="screen-reader-text">Post navigation</h2>
+		<div class="nav-links"><div class="nav-previous"><a href="http://unterbahn.com/2009/11/grassroots-aerial-map/" rel="prev"><span class="meta-nav" aria-hidden="true">Previous</span> <span class="screen-reader-text">Previous post:</span> <span class="post-title">Grassroots Mapping: Balloon test #3 success</span></a></div><div class="nav-next"><a href="http://unterbahn.com/2009/11/wikimapa-by-rede-jovem/" rel="next"><span class="meta-nav" aria-hidden="true">Next</span> <span class="screen-reader-text">Next post:</span> <span class="post-title">Wikimapa by Rede Jovem</span></a></div></div>
+	</nav>
+	</main><!-- .site-main -->
+
+	
+</div><!-- .content-area -->
+
+
+
+		</div><!-- .site-content -->
+
+		<footer id="colophon" class="site-footer" role="contentinfo">
+							<nav class="main-navigation" role="navigation" aria-label="Footer Primary Menu">
+					<div class="menu-navigation-container"><ul id="menu-navigation-1" class="primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2378"><a href="http://unterbahn.com/projects/">Projects</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2379"><a href="https://github.com/jywarren">Code</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2380"><a href="https://publiclab.org/profile/warren">Public Lab</a></li>
+</ul></div>				</nav><!-- .main-navigation -->
+			
+			
+			<div class="site-info">
+								<span class="site-title"><a href="http://unterbahn.com/" rel="home">Unterbahn</a></span>
+				<a href="https://wordpress.org/">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- .site-footer -->
+	</div><!-- .site-inner -->
+</div><!-- .site -->
+
+<script type='text/javascript' src='http://unterbahn.com/wp-content/themes/twentysixteen/js/skip-link-focus-fix.js?ver=20160412'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"expand child menu","collapse":"collapse child menu"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/themes/twentysixteen/js/functions.js?ver=20160412'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-includes/js/wp-embed.min.js?ver=4.5.2'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/plugins/wp-markdown/js/markdown.min.js?ver=1.4'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/plugins/wp-markdown/js/pagedown/Markdown.Converter.min.js?ver=1.4'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/plugins/wp-markdown/js/pagedown/Markdown.Sanitizer.min.js?ver=1.4'></script>
+<script type='text/javascript' src='http://unterbahn.com/wp-content/plugins/wp-markdown/js/pagedown/Markdown.Editor.min.js?ver=1.4'></script>
+</body>
+</html>
